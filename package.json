@@ -1,0 +1,6 @@
+{
+    "dependencies": {
+        "cucumber": "2.0.0-rc.9",
+        "testcafe": "^0.14.0"
+    }
+}
