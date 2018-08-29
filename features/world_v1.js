@@ -7,7 +7,7 @@ const scope = require('./support/scope');
 
 const World = function () {
   scope.host = "https://app.dautu.io/";
-  scope.driver = puppeteer;1
+  scope.driver = puppeteer;
   scope.context = {};
 };
 
