@@ -1,6 +1,5 @@
 var { defineSupportCode } = require('cucumber');
 var Selector       = require('testcafe').Selector;
-var Role           = require('testcafe').Role;
 
 defineSupportCode(function ({ Given, When, Then }) {
     var testController = null;
@@ -30,13 +29,13 @@ defineSupportCode(function ({ Given, When, Then }) {
         return testController.expect(firstLink.innerText).contains(text);
     });
 
-    const gitHubRoleForExample = Role('http://github.com/login', function (t) {
-        return t
-            .click('.btn.btn-primary.btn-block')
-            .expect(Selector('#js-flash-container > div > div').innerText).contains("Incorrect username or password.");
-    });
+    // const gitHubRoleForExample = Role('http://github.com/login', function (t) {
+    //     return t
+    //         .click('.btn.btn-primary.btn-block')
+    //         .expect(Selector('#js-flash-container > div > div').innerText).contains("Incorrect username or password.");
+    // });
 
-    Then('I am trying to use {Role}', function (text) {
-        return testController.useRole(gitHubRoleForExample);
-    });
+    // Then('I am trying to use {Role}', function (text) {
+    //     return testController.useRole(gitHubRoleForExample);
+    // });
 });

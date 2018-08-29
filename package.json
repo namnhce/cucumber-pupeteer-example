@@ -1,6 +1,7 @@
 {
     "dependencies": {
+        "chai": "^4.1.2",
         "cucumber": "2.0.0-rc.9",
-        "testcafe": "^0.14.0"
+        "testcafe": "^15.1.317522"
     }
 }

@@ -1,3 +1,4 @@
+# features/github.feature
 Feature: Searching for TestCafe on GitHub
 
   I want to find TestCafe repository on GitHub
