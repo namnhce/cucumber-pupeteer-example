@@ -1,10 +1,9 @@
 {
-    "scripts": {
-        "start": "cucumber-js"
-    },
-    "dependencies": {
-        "chai": "^4.1.2",
-        "cucumber": "^4.2.1",
-        "webdriverio": "^4.13.2"
-    }
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js.cmd"
+  },
+  "dependencies": {
+    "cucumber": "2.0.0-rc.9",
+    "testcafe": "^0.14.0"
+  }
 }
