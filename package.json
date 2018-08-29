@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "./node_modules/.bin/cucumber-js.cmd"
+    "start": "./node_modules/.bin/cucumber-js"
   },
   "dependencies": {
     "cucumber": "2.0.0-rc.9",
