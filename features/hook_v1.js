@@ -1,4 +1,8 @@
-const { After, Before, AfterAll } = require('cucumber');
+const {
+  After,
+  Before,
+  AfterAll
+} = require('cucumber');
 const scope = require('./support/scope');
 
 Before(async () => {
