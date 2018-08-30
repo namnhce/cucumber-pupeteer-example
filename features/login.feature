@@ -4,4 +4,5 @@ Feature: Login
   I want to manage my todos
 
   Scenario: Login to system
-    Given I have logged in with account "nhnam94@gmail.com" and password "Namnguyen2101"
+    Given I am on the homepage
+    When I click on "Login button"

@@ -3,7 +3,7 @@ const {
   Before,
   AfterAll
 } = require('cucumber');
-const scope = require('./support/scope');
+const scope = require('./scope');
 
 Before(async () => {
   // You can clean up database models here
