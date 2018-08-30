@@ -28,16 +28,18 @@ const visitHomepage = async () => {
 	const visit = await scope.context.currentPage.goto(url, {
 		waitLoad: true,
 		waitNetworkIdle: true,
-		// waitUntil: 'networkidle2'
+		waitUntil: 'networkidle0'
 	});
+	const element = await scope.context.currentPage.$('a[href="https://app.dautu.io/login"]');
+	element.click();
 	return visit;
 };
 
 const clickOnItem = async (button) => {
 	switch (button) {
 		case "Login button":
-			await page.click('a[href="https://app.dautu.io/login"]')
-			// await page.waitForNavigation()
+			await scope.context.currentPage.click('a[href="https://app.dautu.io/login"]');
+			await scope.context.currentPage.waitForNavigation();
 			break;
 		default:
 			break;

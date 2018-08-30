@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer');
 const scope = require('./scope');
 
 const World = function () {
-  scope.host = "https://dautu.io/";
+  scope.host = "https://dautu.io";
   scope.driver = puppeteer;
   scope.context = {};
 };
